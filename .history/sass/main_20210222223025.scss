@@ -1,0 +1,61 @@
+body {
+    background-color: #FFFFFF;
+    color: #797979;
+    font-size: 0.9375rem;
+    font-family: 'robotoregular';
+    font-weight: 300;
+    line-height: 1.42857143; 
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    h5 {
+        font-size: 0.845rem;
+        line-height: 2.5rem;
+    }
+
+    h6 {
+        font-size: .89rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+    i {
+        color: #95E1D3;
+        // line-height: 2;
+    }
+
+}
+
+
+
+
+
+.statistices {
+    background-color: #3BD3BA;
+}
+.brands, .blockquote, footer {
+    background-color: #F8F8F8;
+}
+.uniqe_design {
+    background: url(../assets/img/divicebg.jpg) no-repeat 100% 100% ;
+    background-size: cover;
+}
+.clients {
+    background: url(../assets/img/clientbg.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.card__bg {
+    background-color: #F8F8F8 !important;
+}
+

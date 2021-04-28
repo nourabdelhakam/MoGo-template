@@ -1,0 +1,22 @@
+$section-color: #fff;
+$card-color: #000;
+$line-color: crimson;
+$img-border: #E66B2C;
+$green-btn: green;
+
+$img-width: 100%;
+
+%line {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2px;
+    margin: 8px auto;
+    background-color: $line-color;
+}
+
+%btn {
+    border-radius: 24px;
+    padding: 0.85em 3em;
+    border: none;
+}

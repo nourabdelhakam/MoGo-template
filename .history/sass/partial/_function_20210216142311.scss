@@ -1,0 +1,13 @@
+@mixin wrapper-child ($value) {
+    width: $value;
+}
+
+// @mixin brand($num-brands) {
+//     @for $brand-logo from 1 through $num-brands {
+//         .brand-logo-#{$brand-logo}-of-#{$num-brands} {
+//             width: 10%;
+//             align-self: center;
+//         }
+//     }
+// } 
+// @include brand(8)

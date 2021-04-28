@@ -1,0 +1,104 @@
+@import './partial/var';
+@import './partial/base';
+@import './partial/placeholders';
+
+
+body {
+    background-color: $body_bg-color;
+    color: $body-color;
+    font-size: 0.9375rem;
+    font-family: 'robotoregular';
+    font-weight: 300;
+    line-height: 1.42857143; 
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    h5 {
+        font-size: 0.845rem;
+        line-height: 2.5rem;
+    }
+
+    h6 {
+        font-size: .89rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    i {
+        color: $icon-color;
+    }
+
+    .head-line {
+        @extend %head-line;
+    }
+    
+    .section-line {
+        @include section-line(100%, 2px, $section_ine-color, 20px 0px, inline-block);
+        // overflow: hidden;
+    }
+
+    nav {
+        a {
+            font-size: 0.8rem;
+
+            &:hover {
+                color: $link_hover-color !important;
+            }
+            i {
+                color: $body_bg-color;
+            }
+        }
+    }
+
+    header {
+        background:linear-gradient(rgba(219, 116, 117, 0.6) ,rgba(228, 205, 125, 0.75)),url('../assets/img/homebg.jpg') no-repeat 100% 100%;
+        background-size: $img_bg-size;
+
+        .display-1 {
+            font-size: 4.5rem;
+        }
+
+        a:hover {
+            background-color: $link_hover-color !important;
+            border-color: $link_hover-color !important;
+        }
+    }
+    
+
+    .brands, .blockquote-first, footer {
+        background-color: $main-color;
+    }
+
+    .statistices {
+        background-color: $sec-color;
+    }
+
+    .uniqe_design {
+        background: linear-gradient(rgba(237, 237, 237, 0.80)), url(../assets/img/divicebg.jpg) no-repeat 100% 100% ;
+        background-size: $img_bg-size;
+    }
+    .clients {
+        background: linear-gradient(rgba(237, 237, 237, 0.80)), url(../assets/img/clientbg.jpg) no-repeat 100% 100%;
+        background-size: $img_bg-size;
+    }
+    .map {
+        background: linear-gradient(rgba(237, 237, 237, 0.80)), url(../assets/img/mapbg.jpg)  no-repeat top center;
+        background-size: $img_bg-size;
+    }
+
+}

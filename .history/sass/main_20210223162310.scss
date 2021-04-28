@@ -1,0 +1,146 @@
+@import './partial/var';
+@import './partial/base';
+@import './partial/placeholders';
+
+
+body {
+    background-color: $body_bg-color;
+    color: $body-color;
+    font-size: 0.9375rem;
+    font-family: 'robotoregular';
+    font-weight: 300;
+    line-height: 1.42857143; 
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    h5 {
+        font-size: 0.845rem;
+        line-height: 2.5rem;
+    }
+
+    h6 {
+        font-size: .89rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    i {
+        color: $icon-color;
+    }
+
+    .head-line {
+        @extend %head-line;
+    }
+
+    .section-line {
+        @include section-line(100%, 2px, $section_ine-color, 20px 0px, inline-block);
+    }
+
+// overflow: hidden;
+
+    
+
+    .brands, .blockquote, footer {
+        background-color: $main-color;
+    }
+
+    .statistices {
+        background-color: $sec-color;
+    }
+
+    .uniqe_design {
+        background: url(../assets/img/divicebg.jpg) no-repeat 100% 100% ;
+        background-size: $img_bg-size;
+    }
+    .clients {
+        background: url(../assets/img/clientbg.jpg) no-repeat 100% 100%;
+        background-size: $img_bg-size;
+    }
+    .map {
+        background: url(../assets/img/mapbg.jpg)  no-repeat top center;
+        background-size: $img_bg-size;
+    }
+    .navbar{
+        
+        z-index: 5;
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    a{
+                        color: red;
+                        font-weight: 300;
+                        font-size: .8rem; 
+                    }
+                    &.active a{
+                        color: $main-color ;
+                        // border-bottom: 2px solid $border-color;
+                    }
+                    &:hover a{
+                        color: $main-color !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.header{
+    background: linear-gradient(rgba(219, 116, 117, 0.6) ,rgba(228, 205, 125, 0.75)),url('../assets/img/homebg.jpg');
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+   .carousel{
+        &-inner{
+            h3{
+            font-family: 'Kaushan Script', cursive;
+            padding-bottom: 25px;
+            font-size: 4.5rem;
+            line-height: 5rem;
+            }
+            h1{
+            font-size: 8.5rem;
+            line-height: 11rem;
+            font-weight: 300;
+            width: 80%;
+            margin: auto;
+            }
+        }
+        a{
+            border: 1px solid #fff;
+            width: 200px;
+            transition: .5s;
+            padding: 6px 30px;
+            margin: 10px auto;
+            font-size: 20px;
+            &:hover{
+                // background-color: $main-color;
+                border-color: transparent;
+            }
+        }
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+@import './partial/var';
+@import './partial/base';
+
+
+
+$section-color: #fff;
+$card-color: #000;
+
+
+body {
+    background-color: $card-color;
+}
+
+section {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding {
+        top: 4em;
+        bottom: 3em;
+    }
+    
+    h2 {  
+        position: relative;
+        &::before {
+            content: "SERVICES";
+            position: absolute;
+            opacity: .2;
+            top: -15px;
+            left: 350px;
+            font-size: 2em;
+        }
+    }
+    &, h6 {
+        color: $section-color; 
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 3em;
+        article {
+            width: 30%;
+            margin-bottom: 4em;
+            padding: 0.5em;
+            border-radius: 2px;
+            background-color: $section-color;
+            color: $card-color;
+            
+            i {
+                color: $section-color;
+                background-color: $card-color;
+                position: absolute;
+                border-radius: 25px;
+                padding: .6em 0.5em;
+                margin: -25px 0 0 -17px;
+                border: 1px solid $section-color; 
+            }
+            h4::after {
+                content: "";
+                display: block;
+                width: 2px;
+                height: 1px;
+                color: #000;
+            }   
+            }
+            
+        }
+    }
+
+

@@ -1,0 +1,14 @@
+$section-color: #fff;
+$card-color: #000;
+$line-color: crimson;
+$img-border: #E66B2C;
+$green-btn: green;
+
+%line {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2px;
+    margin: 8px auto;
+    background-color: $line-color;
+}

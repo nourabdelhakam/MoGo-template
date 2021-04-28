@@ -1,0 +1,60 @@
+@import './partial/var';
+@import './partial/base';
+
+
+
+$section-color: #fff;
+$card-color: #000;
+
+
+body {
+    background-color: $card-color;
+}
+
+section {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding {
+        top: 4em;
+        bottom: 3em;
+    }
+    
+    h2 {  
+        position: relative;
+        &::before {
+            content: "SERVICES";
+            position: absolute;
+            opacity: .2;
+            top: -15px;
+            left: 350px;
+            font-size: 2em;
+        }
+    }
+    &, h6 {
+        color: $section-color; 
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article {
+            width: 30%;
+            margin-bottom: 2em;
+            background-color: $section-color;
+            color: $card-color;
+            
+            i {
+                color: $section-color;
+                background-color: $card-color;
+                position: absolute;
+                height: 35px;
+                width: 35px;
+                border-radius: 25px;
+                margin-top: -18px;
+                border: 1px solid $section-color; 
+            }
+        }
+    }
+}
+

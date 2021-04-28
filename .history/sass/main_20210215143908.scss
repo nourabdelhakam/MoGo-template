@@ -1,0 +1,50 @@
+@import './partial/var';
+@import './partial/base';
+
+
+
+$section-color: #fff;
+$card-color: #000;
+
+body {
+    background-color: $card-color;
+}
+
+section {
+    text-align: center;
+    width: 70%;
+    padding {
+        top: 4em;
+        bottom: 3em;
+    }
+    margin: 0 auto;
+
+    h2 {
+        color: $section-color;
+        // &::before {
+
+        // }
+    }
+}
+
+// &::before
+// h6 {
+
+// }
+// .wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+// // placeholder | extend
+// // %line
+// %card
+
+// %circle
+//  {
+//     width: ;
+//     height
+// // }
+
+// width 

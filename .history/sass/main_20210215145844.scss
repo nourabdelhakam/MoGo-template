@@ -1,0 +1,68 @@
+@import './partial/var';
+@import './partial/base';
+
+
+
+$section-color: #fff;
+$card-color: #000;
+
+
+body {
+    background-color: $card-color;
+}
+
+section {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding {
+        top: 4em;
+        bottom: 3em;
+    }
+    
+    h2 {
+        color: $section-color;
+        position: relative;
+        &::before {
+            content: "SERVICES";
+            position: absolute;
+            opacity: .2;
+            top: -15px;
+            left: 350px;
+            font-size: 2em;
+        }
+    }
+    h6 {
+        color: $section-color; 
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article {
+            width: 30%;
+            .card {
+                background-color: $section-color;
+                color: $section-color;
+            }
+        }
+    }
+}
+
+// &::before
+// h6 {
+
+// }
+
+
+// // placeholder | extend
+// // %line
+// %card
+
+// %circle
+//  {
+//     width: ;
+//     height
+// // }
+
+// width 

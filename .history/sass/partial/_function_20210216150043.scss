@@ -1,0 +1,39 @@
+@mixin wrapper ($value1, $value2, $value3, $value4) {
+    display: $value1;
+    flex-wrap: $value2;
+    justify-content: $value3;
+    padding-top: $value4;
+}
+
+
+@mixin wrapper-child ($value) {
+    width: $value;
+}
+
+@mixin btn ($padding, $border-r,$border, $color) {
+    padding: $padding;
+    border-radius: $border-r;
+    border: $border;
+    color: $color;
+
+    // background-color: $bgcolor;
+    
+    
+    // @if {
+    //     background-color: $img-border;
+    //     color: $section-color;
+    // } @else {
+    //     background-color: $bgcolor;
+    //     color: $color;
+    // }
+}
+
+// @mixin brand($num-brands) {
+//     @for $brand-logo from 1 through $num-brands {
+//         .brand-logo-#{$brand-logo}-of-#{$num-brands} {
+//             width: 10%;
+//             align-self: center;
+//         }
+//     }
+// } 
+// @include brand(8)

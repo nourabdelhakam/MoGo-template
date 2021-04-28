@@ -1,0 +1,19 @@
+%head-line {
+    height: 3px;
+    width: 127px;
+    margin: 25px auto;
+    background: $head_line-color;
+}
+
+
+@mixin section-line ($width, $height, $bg_clr, $margin, $display) {
+    width: $width;
+    height: $height;
+    background: $bg_clr;
+    overflow: hidden;
+    margin: $margin;
+    display: $display;
+}    
+
+
+
